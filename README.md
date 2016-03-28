@@ -10,6 +10,7 @@ This is a simple chat demo for socket.io and Android. You can connect to [chat.s
 
 ## Tutorial
 
+http://socketio.github.io/socket.io-client-java/apidocs/
 http://socket.io/blog/native-socket-io-and-android/
 
 ## License
