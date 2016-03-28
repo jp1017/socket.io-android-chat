@@ -11,7 +11,10 @@ public class ChatApplication extends Application {
     private Socket mSocket;
     {
         try {
-            mSocket = IO.socket(Constants.CHAT_SERVER_URL);
+            IO.Options options = new IO.Options();
+            options.port = 666;
+            mSocket = IO.socket(Constants.CHAT_SERVER_URL, options);
+
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);
         }
